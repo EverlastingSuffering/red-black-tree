@@ -159,8 +159,6 @@ typedef enum rb_color
         if(__rb_parent(tree,u) == __rb_nil)                                                                                                                             \
         {                                                                                                                                                               \
             tree->root = v;                                                                                                                                             \
-            if(v == __rb_nil)                                                                                                                                           \
-                tree->size = 0;                                                                                                                                         \
         }                                                                                                                                                               \
         else if(__rb_is_right_child(tree,u))                                                                                                                            \
             __rb_node_by_index(tree,__rb_parent(tree,u)).right = v;                                                                                                     \
